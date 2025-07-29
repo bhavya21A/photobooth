@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #ff4081;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+video, canvas {
+  width: 320px;
+  height: 240px;
+  border-radius: 12px;
+  background: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+canvas {
+  display: block;
+  background: black;
+}
+
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+button, select, label {
+  margin: 5px;
+  padding: 10px 15px;
+  background: #ff4081;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover, select:hover {
+  background: #e73370;
+}
+
+.sticker-bar {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sticker {
+  width: 50px;
+  height: 50px;
+  cursor: grab;
+  user-select: none;
+}
+
+#countdown {
+  font-size: 3rem;
+  color: #ffeb3b;
+  margin: 10px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+#strip-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+  margin-top: 1rem;
+  background: #222;
+  border-radius: 10px;
+}
+
+.strip-image {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+#stickerPanel {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.sticker {
+  width: 60px;
+  height: 60px;
+  cursor: grab;
+}
+#video,
+#canvas {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+#video-canvas-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+.sticker-panel {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sticker {
+  width: 50px;
+  height: 50px;
+  cursor: grab;
+}
+

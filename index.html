@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photobooth Strip App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📸 Snap Booth</h1>
+
+  <div id="video-canvas-container">
+    <video id="video" autoplay muted></video>
+    <canvas id="canvas" width="320" height="240"></canvas>
+  </div>
+
+  <div id="controls">
+    <select id="filter">
+      <option value="none">None</option>
+      <option value="grayscale(1)">Grayscale</option>
+      <option value="sepia(1)">Sepia</option>
+      <option value="blur(3px)">Blur</option>
+      <option value="saturate(3)">Saturate</option>
+      <option value="contrast(200%)">High Contrast</option>
+      <option value="brightness(1.5)">Bright</option>
+    </select>
+    <button id="capture">🎬 Take Photo</button>
+    <span id="countdown"></span>
+  </div>
+<!--
+  <div id="stickerPanel">
+  <img src="stickers/cat.png" class="sticker" draggable="true" />
+  <img src="stickers/cute.png" class="sticker" draggable="true" />
+  <img src="stickers/emoticon.png" class="sticker" draggable="true" />
+  <img src="stickers/happy.png" class="sticker" draggable="true" />
+  <img src="stickers/heart-shape.png" class="sticker" draggable="true" />
+  <img src="stickers/smile.png" class="sticker" draggable="true" />
+  <img src="stickers/strawberry-milk.png" class="sticker" draggable="true" />
+  <img src="stickers/sun.png" class="sticker" draggable="true" />
+  <img src="stickers/love (1).png" class="sticker" draggable="true" />
+  </div>-->
+
+  <div id="strip-container" class="strip"></div>
+
+  <!-- ✅ Added id -->
+  <a id="download" href="#" style="display: none;">⬇️ Download Photo Strip</a>
+
+  <canvas id="downloadCanvas" width="320" height="720" style="display: none;"></canvas>
+  <audio id="snapSound" src="snap.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
