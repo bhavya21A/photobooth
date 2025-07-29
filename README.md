@@ -27,7 +27,7 @@ photobooth/
 4. Customize with filters/stickers and capture photos!
 
 ## 🔗 Live Demo 
-[Live version here](https://bhavya21A.github.io/photobooth)
+[Live version here](https://bhavya21a.github.io/photobooth/)
 
 ---
 
